@@ -97,7 +97,7 @@ query {
 }
 ```
 
-**Get all logged in author's blogs**
+**Get logged in author's all blogs**
 ```graphql
 query {
   getMyBlogs {
