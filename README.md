@@ -63,31 +63,65 @@ This project implements a complete GraphQL API that allows authors to create, vi
 
 ### GraphQL Queries
 
-**Get all blog posts**
+**Get all blogs**
 ```graphql
 query {
-  blogs {
+  getAllBlogs {
     id
     title
     content
+    authorId
     author {
       id
       name
       email
     }
-    createdAt
-    updatedAt
   }
 }
 ```
 
-**Get a specific blog post**
+**Get a specific blog**
 ```graphql
 query {
-  blog(id: "blog_id") {
+  getBlogById(id: "blog_id") {
     id
     title
     content
+    authorId
+    author {
+      id
+      name
+      email
+    }
+  }
+}
+```
+
+**Get all logged in author's blogs**
+```graphql
+query {
+  getMyBlogs {
+    id
+    title
+    content
+    authorId
+    author {
+      id
+      name
+      email
+    }
+  }
+}
+```
+
+**Get logged in author's specific blog**
+```graphql
+query {
+  getMyBlogById(id: "blog_id") {
+    id
+    title
+    content
+    authorId
     author {
       id
       name
@@ -99,12 +133,46 @@ query {
 
 ### GraphQL Mutations
 
-**Register/Login Author**
+**Register Author**
 ```graphql
 mutation {
-  login(email: "author@example.com", password: "password") {
+  registerAuthor(name: "author name", email: "author@example.com", password: "password") {
+    author {
+      id
+      name
+      email
+    }
     token
-    user {
+  }
+}
+```
+
+**Login Author**
+```graphql
+mutation {
+  loginAuthor(email: "author@example.com", password: "password") {
+    author {
+      id
+      name
+      email
+    }
+    token
+  }
+}
+```
+
+**Create a blog**
+```graphql
+mutation {
+  addBlog(
+    title: "My First Blog"
+    content: "This is my first blog"
+  ) {
+    id
+    title
+    content
+    authorId
+    author {
       id
       name
       email
@@ -113,45 +181,31 @@ mutation {
 }
 ```
 
-**Create a blog post**
+**Update a blog**
 ```graphql
 mutation {
-  createBlog(input: {
-    title: "My First Blog"
-    content: "This is my first blog post"
-  }) {
+  updateBlog(
+    id: "blog_id",
+    title: "Updated Title"
+    content: "Updated content"
+  ) {
     id
     title
     content
+    authorId
     author {
       id
       name
+      email
     }
-    createdAt
   }
 }
 ```
 
-**Update a blog post**
-```graphql
-mutation {
-  updateBlog(id: "blog_id", input: {
-    title: "Updated Title"
-    content: "Updated content"
-  }) {
-    id
-    title
-    content
-    updatedAt
-  }
-}
-```
-
-**Delete a blog post**
+**Delete a blog**
 ```graphql
 mutation {
   deleteBlog(id: "blog_id") {
-    id
     message
   }
 }
@@ -189,10 +243,35 @@ Blog_App_GraphQL/
 │   ├── middleware/      # Authentication middleware
 │   ├── config/          # Configuration files
 │   └── server.js        # Main server file
-├── .env                 # Environment variables
+├── config/              # Environment variables
+|   |__
 ├── .gitignore
 ├── package.json
 └── README.md
+```
+
+## 📂 Project Structure
+
+```
+└── 📁Blog_App_Graphql
+    └── 📁config
+        ├── .env
+    └── 📁graphql
+        └── 📁typedefs
+            ├── AuthorType.js
+            ├── AuthPayload.js
+            ├── BlogType.js
+        ├── schema.js
+    └── 📁models
+        ├── authorModel.js
+        ├── blogModel.js
+    └── 📁util
+        ├── authMiddleware.js
+    ├── .gitignore
+    ├── app.js
+    ├── package-lock.json
+    ├── package.json
+    └── server.js
 ```
 
 ## 🧪 Testing
