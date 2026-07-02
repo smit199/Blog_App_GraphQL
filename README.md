@@ -235,24 +235,6 @@ Only authenticated authors can:
 ## 📂 Project Structure
 
 ```
-Blog_App_GraphQL/
-├── src/
-│   ├── schema/          # GraphQL schema definitions
-│   ├── resolvers/       # Query and mutation resolvers
-│   ├── models/          # Database models
-│   ├── middleware/      # Authentication middleware
-│   ├── config/          # Configuration files
-│   └── server.js        # Main server file
-├── config/              # Environment variables
-|   |__
-├── .gitignore
-├── package.json
-└── README.md
-```
-
-## 📂 Project Structure
-
-```
 └── 📁Blog_App_Graphql
     └── 📁config
         ├── .env
