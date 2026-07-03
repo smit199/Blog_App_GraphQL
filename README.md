@@ -2,11 +2,14 @@
 
 A robust GraphQL API for managing blog content with full authentication and authorization capabilities. Built with modern technologies to provide a secure and scalable blogging platform.
 
----
-
 ## Table of Contents
 
--[Description](#Description)
+- [Description](#Description)
+- [Features](#Features)
+- [Tech Stake](#Tech-Stake)
+- [Installation](#Installation)
+  - [Prerequisites](#Prerequisites)
+  - [Setup Steps](#Setup-Steps)
 
 ## 📋 Description
 
