@@ -350,6 +350,4 @@ For issues and questions, please open an issue on the GitHub repository.
 
 ---
 
----
-
 Made with ❤️ by smit199
