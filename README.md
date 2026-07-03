@@ -2,6 +2,12 @@
 
 A robust GraphQL API for managing blog content with full authentication and authorization capabilities. Built with modern technologies to provide a secure and scalable blogging platform.
 
+---
+
+## Table of Contents
+
+-[Description](#Description)
+
 ## 📋 Description
 
 This project implements a complete GraphQL API that allows authors to create, view, update, and delete blog posts. It features JWT-based authentication and authorization mechanisms to ensure secure access to API endpoints, allowing only authenticated authors to manage their content.
