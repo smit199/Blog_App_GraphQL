@@ -6,7 +6,7 @@ A robust GraphQL API for managing blog content with full authentication and auth
 
 ## Table of Contents
 
-- [Description](#📋-description)
+- [Description](#-description)
 - [Features](#✨-features)
 - [Tech Stake](#🛠️-tech-Stack)
 - [Installation](#📦-installation)
