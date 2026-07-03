@@ -2,18 +2,38 @@
 
 A robust GraphQL API for managing blog content with full authentication and authorization capabilities. Built with modern technologies to provide a secure and scalable blogging platform.
 
+---
+
 ## Table of Contents
 
-- [Description](#Description)
-- [Features](#Features)
-- [Tech Stake](#Tech-Stake)
-- [Installation](#Installation)
+- [Description](#📋-Description)
+- [Features](#✨-Features)
+- [Tech Stake](#🛠️-Tech-Stack)
+- [Installation](#📦-Installation)
   - [Prerequisites](#Prerequisites)
   - [Setup Steps](#Setup-Steps)
+- [Usage](#🚀-Usage)
+  - [GraphQL Queries](#GraphQL-Queries)
+  - [GraphQL Mutations](#GraphQL-Mutaions)
+- [Authentication & Authorization](#🔐-Authentication-&-Authorization)
+  - [How Authentication Works](#How-Authentication-Works)
+  - [Protected Endpoints](#Protected-Endpoints)
+- [Project Structure](#📂-Project-Structure)
+- [Testing](#🧪-Testing)
+- [API Endpoints](#📝-API-Endpoints)
+- [Contributing](#🤝-Contributing)
+- [License](#📄-License)
+- [Author](#👤-Author)
+- [Support](#🆘-Support)
+- [Useful Links](#🔗-Useful Links)
+
+ ---
 
 ## 📋 Description
 
 This project implements a complete GraphQL API that allows authors to create, view, update, and delete blog posts. It features JWT-based authentication and authorization mechanisms to ensure secure access to API endpoints, allowing only authenticated authors to manage their content.
+
+---
 
 ## ✨ Features
 
@@ -24,6 +44,8 @@ This project implements a complete GraphQL API that allows authors to create, vi
 - **Author Management** - Authors can manage only their own blog posts
 - **Secure Endpoints** - Protected API endpoints with token verification
 
+---
+
 ## 🛠️ Tech Stack
 
 - **Language**: JavaScript (Node.js)
@@ -31,6 +53,8 @@ This project implements a complete GraphQL API that allows authors to create, vi
 - **Authentication**: JWT (JSON Web Tokens)
 - **Database**: [Specify your database - e.g., MongoDB, PostgreSQL]
 - **Runtime**: Node.js
+
+---
 
 ## 📦 Installation
 
@@ -66,7 +90,7 @@ This project implements a complete GraphQL API that allows authors to create, vi
    npm start
    ```
 
-   The GraphQL server will be available at `http://localhost:4000/graphql`
+---
 
 ## 🚀 Usage
 
@@ -220,6 +244,8 @@ mutation {
 }
 ```
 
+---
+
 ## 🔐 Authentication & Authorization
 
 ### How Authentication Works
@@ -240,6 +266,8 @@ Only authenticated authors can:
 - Create new blog posts
 - Update their own blog posts
 - Delete their own blog posts
+
+---
 
 ## 📂 Project Structure
 
@@ -265,6 +293,8 @@ Only authenticated authors can:
     └── server.js
 ```
 
+---
+
 ## 🧪 Testing
 
 To test the API, you can use:
@@ -273,10 +303,14 @@ To test the API, you can use:
 - **Postman** - Send GraphQL queries via POST requests
 - **Apollo Client** - Frontend integration
 
+---
+
 ## 📝 API Endpoints
 
 - `POST /graphql` - GraphQL API endpoint
 - `GET /graphql` - GraphQL Playground (development)
+
+---
 
 ## 🤝 Contributing
 
@@ -288,23 +322,33 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+---
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
 
 ## 👤 Author
 
 **smit199**
 
+---
+
 ## 🆘 Support
 
 For issues and questions, please open an issue on the GitHub repository.
+
+---
 
 ## 🔗 Useful Links
 
 - [GraphQL Documentation](https://graphql.org/)
 - [JWT Introduction](https://jwt.io/introduction)
 - [Node.js Documentation](https://nodejs.org/)
+
+---
 
 ---
 
